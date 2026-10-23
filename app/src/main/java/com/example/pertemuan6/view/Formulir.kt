@@ -90,3 +90,14 @@ fun FormIsian(
                 onValueChange = {},
             )
             Spacer(modifier = Modifier.height(30.dp))
+            Button(
+                modifier = Modifier
+                    .fillMaxWidth(1f)
+                    .padding(all = 25.dp),
+                onClick = onSubmitBtnClick // Menyesuaikan pemanggilan parameter yang baru
+            ) {
+                Text(stringResource(id = R.string.submit))
+            }
+        }
+    }
+}
