@@ -31,4 +31,7 @@ import com.example.pertemuan6.R
 fun FormIsian(
     jenisK: List<String> = listOf("Laki-laki", "Perempuan"),
     onSubmitBtnClick: () -> Unit // Diperbaiki dari 'OnSubmitBtnClick' menjadi huruf kecil di awal
-)
+) {
+    Scaffold(
+        modifier = Modifier,
+        topBar = {
