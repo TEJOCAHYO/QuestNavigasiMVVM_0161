@@ -51,4 +51,13 @@ fun TampilData(
                 modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_medium)),
                 verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_small))
             ) {
-                
+                items.forEach { item ->
+                    Column(modifier = Modifier.fillMaxWidth()) {
+                        // Menampilkan Label (Nama Lengkap, Jenis Kelamin, Alamat)
+                        Text(text = item.first.uppercase(), fontSize = 12.sp, color = Color.Gray)
+                        // Menampilkan Isi Data (Contoh Nama, Lainnya, Yogyakarta)
+                        Text(text = item.second, fontSize = 16.sp, color = Color.Black)
+                    }
+                }
+            }
+
