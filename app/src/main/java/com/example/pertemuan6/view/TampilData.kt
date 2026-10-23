@@ -61,3 +61,15 @@ fun TampilData(
                 }
             }
 
+            // Menggunakan parameter onBackBtnClick agar warning-nya hilang
+            Button(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(dimensionResource(id = R.dimen.padding_medium)),
+                onClick = onBackBtnClick
+            ) {
+                Text(text = "Kembali")
+            }
+        }
+    }
+}
